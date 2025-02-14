@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/flatpickr.css';
+
+@import 'tailwindcss/utilities';
+
+/* Style for the input */
+.datetime-input-start {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0px 0px 6px;
+    font-size: 14px;
+    max-width: 200px; /* Adjust width as needed */
+    height: 30px;
+}
+
+/* Style for the input */
+.datetime-input-end {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 0px solid #ccc;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 14px;
+    max-width: 200px; /* Adjust width as needed */
+    height: 30px;
+}
+
+/* Style for when the input is focused */
+.datetime-input:focus {
+    outline: none;
+    border-color: #007bff; /* Change to desired focus color */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Change to desired focus shadow */
+}
+
+/* Style for when the input is hovered */
+.datetime-input:hover {
+    border-color: #999; /* Change to desired hover color */
+}
+
+.slick-prev, .slick-next {
+    top: 38% !important;
+}
+.slick-prev:before, .slick-next:before {
+    color: #1E293B !important;
+}
